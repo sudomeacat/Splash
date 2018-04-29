@@ -11,7 +11,7 @@
 
 @interface SplashView : ScreenSaverView
 
-@property float count;
-@property NSMutableArray *circles;
+@property (readwrite, nonatomic) float count;
+@property (readwrite, nonatomic) NSMutableArray *circles;
 
 @end

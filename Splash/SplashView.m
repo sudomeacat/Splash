@@ -10,7 +10,7 @@
 
 @implementation SplashView
 
-const double PI = 3.1415926536;
+const double PI = 3.14159265358979323846;
 const double MIN_RADIUS = 5.;
 const double MAX_RADIUS = 30.;
 const double WHEEL_RADIUS = 50.;
@@ -54,7 +54,7 @@ const double WHEEL_RADIUS = 50.;
     [super stopAnimation];
 }
 
-#pragma mark -- Artwork
+#pragma mark Artwork
 
 - (void)drawRect:(NSRect)rect {
     [super drawRect:rect];
@@ -62,7 +62,7 @@ const double WHEEL_RADIUS = 50.;
     for (Circle* current in self.circles) {
         [current transformWithMagnitude:current.ring*sin(0.35*current.ring+self.count)];
         current.radius = ((MAX_RADIUS-MIN_RADIUS)/2) * cos(self.count+current.ring) + (MAX_RADIUS+MIN_RADIUS)/2;
-        [current draw:YES];
+        [current draw];
     }
     
     self.count+=0.1;
@@ -72,7 +72,7 @@ const double WHEEL_RADIUS = 50.;
     [self drawRect:[self bounds]];
 }
 
-#pragma mark -- Configure Sheet Initialization
+#pragma mark Configure Sheet Initialization
 
 - (BOOL)hasConfigureSheet {
     return NO;

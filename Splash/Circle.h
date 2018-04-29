@@ -10,18 +10,15 @@
 
 @interface Circle : NSObject
 
-@property NSPoint origin;
-@property double radius;
-@property double angle;
-@property int ring;
-@property int color;
+@property (readwrite, nonatomic) NSPoint origin;
+@property (readwrite, nonatomic) double radius;
+@property (readwrite, nonatomic) double angle;
+@property (readwrite, nonatomic) int ring;
+@property (readwrite, nonatomic) int color;
 
 - (instancetype)initWithOrigin:(NSPoint)origin Ring:(int)ring Angle:(double)angle;
-
 - (void)transformWithMagnitude:(double)magnitude;
-
-- (void)draw:(bool)update_color;
-
-- (void)updateColor;
+- (void)draw;
+- (void)updateColor:(int)increment;
 
 @end
