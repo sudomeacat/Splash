@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CEF09CF2095695B007ED599 /* SplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEF09CE2095695B007ED599 /* SplashView.h */; };
 		3CEF09D12095695B007ED599 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF09D02095695B007ED599 /* SplashView.m */; };
+		3CEF09D920956AE8007ED599 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF09D820956AE8007ED599 /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,8 @@
 		3CEF09CE2095695B007ED599 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
 		3CEF09D02095695B007ED599 /* SplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
 		3CEF09D22095695B007ED599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEF09D820956AE8007ED599 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		3CEF09DA20956AF1007ED599 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 			children = (
 				3CEF09CE2095695B007ED599 /* SplashView.h */,
 				3CEF09D02095695B007ED599 /* SplashView.m */,
+				3CEF09D820956AE8007ED599 /* Circle.m */,
+				3CEF09DA20956AF1007ED599 /* Circle.h */,
 				3CEF09D22095695B007ED599 /* Info.plist */,
 			);
 			path = Splash;
@@ -134,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEF09D12095695B007ED599 /* SplashView.m in Sources */,
+				3CEF09D920956AE8007ED599 /* Circle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
