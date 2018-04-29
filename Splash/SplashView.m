@@ -10,8 +10,7 @@
 
 @implementation SplashView
 
-- (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
-{
+- (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
         [self setAnimationTimeInterval:1/30.0];
@@ -19,33 +18,27 @@
     return self;
 }
 
-- (void)startAnimation
-{
+- (void)startAnimation {
     [super startAnimation];
 }
 
-- (void)stopAnimation
-{
+- (void)stopAnimation {
     [super stopAnimation];
 }
 
-- (void)drawRect:(NSRect)rect
-{
+- (void)drawRect:(NSRect)rect {
     [super drawRect:rect];
 }
 
-- (void)animateOneFrame
-{
+- (void)animateOneFrame {
     return;
 }
 
-- (BOOL)hasConfigureSheet
-{
+- (BOOL)hasConfigureSheet {
     return NO;
 }
 
-- (NSWindow*)configureSheet
-{
+- (NSWindow*)configureSheet {
     return nil;
 }
 
