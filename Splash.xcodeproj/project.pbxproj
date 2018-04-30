@@ -10,6 +10,8 @@
 		3CEF09CF2095695B007ED599 /* SplashView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEF09CE2095695B007ED599 /* SplashView.h */; };
 		3CEF09D12095695B007ED599 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF09D02095695B007ED599 /* SplashView.m */; };
 		3CEF09D920956AE8007ED599 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF09D820956AE8007ED599 /* Circle.m */; };
+		3CEF09E52096C01C007ED599 /* Ring.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF09E42096C01C007ED599 /* Ring.m */; };
+		3CEF09E82096C04C007ED599 /* Ring.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEF09E72096C04C007ED599 /* Ring.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3CEF09D22095695B007ED599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEF09D820956AE8007ED599 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		3CEF09DA20956AF1007ED599 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		3CEF09E42096C01C007ED599 /* Ring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ring.m; sourceTree = "<group>"; };
+		3CEF09E72096C04C007ED599 /* Ring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ring.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		3CEF09CD2095695B007ED599 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				3CEF09CE2095695B007ED599 /* SplashView.h */,
 				3CEF09D02095695B007ED599 /* SplashView.m */,
+				3CEF09CE2095695B007ED599 /* SplashView.h */,
+				3CEF09E42096C01C007ED599 /* Ring.m */,
+				3CEF09E72096C04C007ED599 /* Ring.h */,
 				3CEF09D820956AE8007ED599 /* Circle.m */,
 				3CEF09DA20956AF1007ED599 /* Circle.h */,
 				3CEF09D22095695B007ED599 /* Info.plist */,
@@ -67,6 +73,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEF09E82096C04C007ED599 /* Ring.h in Headers */,
 				3CEF09CF2095695B007ED599 /* SplashView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				3CEF09D12095695B007ED599 /* SplashView.m in Sources */,
 				3CEF09D920956AE8007ED599 /* Circle.m in Sources */,
+				3CEF09E52096C01C007ED599 /* Ring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

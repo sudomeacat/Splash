@@ -7,11 +7,12 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
-#import "Circle.h"
+#import <math.h>
+#import "Ring.h"
 
 @interface SplashView : ScreenSaverView
 
 @property (readwrite, nonatomic) float count;
-@property (readwrite, nonatomic) NSMutableArray *circles;
+@property (readwrite, nonatomic) NSMutableArray *rings;
 
 @end
