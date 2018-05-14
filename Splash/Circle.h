@@ -14,6 +14,7 @@
 @property (readwrite, nonatomic) NSPoint origin;
 @property (readwrite, nonatomic) double radius;
 @property (readwrite, nonatomic) double angle;
+@property (readwrite, nonatomic) NSColor* color;
 
 - (instancetype)initWithOrigin:(NSPoint)origin Angle:(double)angle;
 - (void)transformWithMagnitude:(double)magnitude;

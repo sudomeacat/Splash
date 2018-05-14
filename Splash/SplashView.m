@@ -66,4 +66,36 @@
     return nil;
 }
 
+#pragma mark Override responders
+
+- (void)mouseDown:(NSEvent *)event {}
+
+- (void)mouseUp:(NSEvent *)event {}
+
+-(void)mouseMoved:(NSEvent *)event {}
+
+- (void)mouseExited:(NSEvent *)event {}
+
+- (void)mouseDragged:(NSEvent *)event {}
+
+- (void)mouseEntered:(NSEvent *)event {}
+
+- (void)rightMouseUp:(NSEvent *)event {}
+
+- (void)rightMouseDown:(NSEvent *)event {}
+
+- (void)rightMouseDragged:(NSEvent *)event {}
+
+- (void)otherMouseUp:(NSEvent *)event {}
+
+- (void)otherMouseDown:(NSEvent *)event {}
+
+- (void)otherMouseDragged:(NSEvent *)event {}
+
+- (void)keyUp:(NSEvent *)event {}
+
+- (void)keyDown:(NSEvent *)event {}
+
+- (void)flagsChanged:(NSEvent *)event {}
+
 @end
