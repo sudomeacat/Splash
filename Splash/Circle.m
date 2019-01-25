@@ -25,6 +25,18 @@ float b;
     return self;
 }
 
+- (instancetype)initWithOrigin:(NSPoint)origin Angle:(double)angle Green:(float)green {
+    self = [super init];
+    if (self) {
+        self.origin = origin;
+        self.angle = angle;
+        self.radius = 0;
+        g = green;
+    }
+    return self;
+}
+
+
 - (void)transformWithMagnitude:(double)magnitude {
     self.origin = NSMakePoint(self.origin.x + magnitude*sin(self.angle), self.origin.y + magnitude*cos(self.angle));
 }
@@ -37,7 +49,7 @@ float b;
     rect.origin = NSMakePoint(self.origin.x - self.radius/2., self.origin.y - self.radius/2.);
     path = [NSBezierPath bezierPathWithOvalInRect:rect];
     
-    [self nextColor:0.05];
+    [self nextColor:0.025];
     NSColor* curr_color = [NSColor colorWithRed:r/255.
                                           green:g/255.
                                            blue:b/255.

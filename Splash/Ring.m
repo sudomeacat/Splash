@@ -29,6 +29,23 @@ const double MAX_RADIUS = 30.;
     return self;
 }
 
+
+- (instancetype)initWithCount:(int)count Ring:(int)ring Offset:(double)offset Center:(NSPoint)center Green:(float)green {
+    self = [super init];
+    if (self) {
+        self.transform_amplifier = ring;
+        self.circles = [[NSMutableArray alloc] initWithCapacity:count];
+        for (int i = 0; i < count; i++) {
+            double angle = i * (2 * M_PI) / count + offset;
+            [self.circles addObject:[[Circle alloc] initWithOrigin:NSMakePoint(ring * 50 * sin(angle) + center.x,
+                                                                               ring * 50 * cos(angle) + center.y)
+                                                             Angle:angle
+                                                             Green:green]];
+        }
+    }
+    return self;
+}
+
 - (void)transform:(double)t {
     for (Circle* c in self.circles) {
         [c transformWithMagnitude: self.transform_amplifier*sin(0.25*self.transform_amplifier+t)];

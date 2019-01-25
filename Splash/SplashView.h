@@ -13,6 +13,6 @@
 @interface SplashView : ScreenSaverView
 
 @property (readwrite, nonatomic) float count;
-@property (readwrite, nonatomic) NSMutableArray *rings;
+@property (readwrite, nonatomic) NSMutableArray* rings;
 
 @end

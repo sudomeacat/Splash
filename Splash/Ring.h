@@ -16,6 +16,7 @@
 @property double transform_amplifier;
 
 - (instancetype)initWithCount:(int)count Ring:(int)ring Offset:(double)offset Center:(NSPoint)center;
+- (instancetype)initWithCount:(int)count Ring:(int)ring Offset:(double)offset Center:(NSPoint)center Green:(float)green;
 - (void)transform:(double)t;
 - (void)draw;
 

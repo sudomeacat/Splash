@@ -17,6 +17,7 @@
 @property (readwrite, nonatomic) NSColor* color;
 
 - (instancetype)initWithOrigin:(NSPoint)origin Angle:(double)angle;
+- (instancetype)initWithOrigin:(NSPoint)origin Angle:(double)angle Green:(float)green;
 - (void)transformWithMagnitude:(double)magnitude;
 - (void)draw;
 
